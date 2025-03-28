@@ -9,9 +9,8 @@
             public int age;
         }
 
-        //Instantiate Player object at Program class level
-        //so it's accessible from any method within Program class
-        //as long as the methods are static
+        //instantiate player object at Program class level
+        //so it's accessible from any method within Program class as long as the methods are static
         static Player player = new Player();
 
         //create a new string list which also needs to be static since we are populating it inside the InitializeList method
@@ -19,9 +18,8 @@
 
         static void Main(string[] args)
         {
+            //call methods
             InitializeList();
-
-            //Greet the user with their firstname, lastname and age with a custom welcome based on date/time (seconds)
             ReadInput();
 
             DateTime date = DateTime.Now;
@@ -32,7 +30,6 @@
 
             Console.WriteLine($"Hello, {player.firstName} {player.lastName} ({player.age} years). Your quote is:\n\"{greetingList[date.Second]}\"\n\n{dateMessage} {date.DayOfWeek} {date.ToString(dateFormat)}\n{timeMessage} {date.ToString(timeFormat)}");
             Console.WriteLine($"Quote used is located at position {greetingList.IndexOf(greetingList[date.Second])} in a list of {greetingList.Count} items.");
-            //Console.WriteLine($"Today is a {date.DayOfWeek}");
         } //end of Main
 
         public static bool IsNull(string? input)
@@ -113,6 +110,7 @@
 
         public static void ReadInput()
         {
+            //ask the user for their firstname, lastname and age and add these values to their respective player fields
             string? result = null;
             bool ageIsANumber = false;
 
