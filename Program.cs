@@ -1,4 +1,7 @@
-﻿namespace HHG_timebased_welcome_quotes
+﻿using System;
+using System.Diagnostics;
+
+namespace HHG_timebased_welcome_quotes
 {
     class Program
     {
@@ -27,9 +30,26 @@
             const string timeFormat = "HH:mm:ss";
             const string dateMessage = "The date is:";
             const string timeMessage = "The time is:";
+            int dontPanic = 42;
+            const string dontPanicText = @"______            _ _    ______           _      
+|  _  \          ( ) |   | ___ \         (_)     
+| | | |___  _ __ |/| |_  | |_/ /_ _ _ __  _  ___ 
+| | | / _ \| '_ \  | __| |  __/ _` | '_ \| |/ __|
+| |/ / (_) | | | | | |_  | | | (_| | | | | | (__ 
+|___/ \___/|_| |_|  \__| \_|  \__,_|_| |_|_|\___|
+                                                 
+                                                 ";
 
-            Console.WriteLine($"Hello, {player.firstName} {player.lastName} ({player.age} years). Your quote is:\n\"{greetingList[date.Second]}\"\n\n{dateMessage} {date.DayOfWeek} {date.ToString(dateFormat)}\n{timeMessage} {date.ToString(timeFormat)}");
-            Console.WriteLine($"Quote used is located at position {greetingList.IndexOf(greetingList[date.Second])} in a list of {greetingList.Count} items.");
+            if (player.age == dontPanic)
+            {
+                Console.WriteLine(dontPanicText);
+            }
+            else
+            {
+
+                Console.WriteLine($"Hello, {player.firstName} {player.lastName} ({player.age} years). Your quote is:\n\"{greetingList[date.Second]}\"\n\n{dateMessage} {date.DayOfWeek} {date.ToString(dateFormat)}\n{timeMessage} {date.ToString(timeFormat)}");
+                Console.WriteLine($"Quote used is located at position {greetingList.IndexOf(greetingList[date.Second])} in a list of {greetingList.Count} items.");
+            }
         } //end of Main
 
         public static bool IsNull(string? input)
