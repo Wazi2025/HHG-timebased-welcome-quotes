@@ -31,7 +31,7 @@ namespace HHG_timebased_welcome_quotes
             const string dateMessage = "The date is:";
             const string timeMessage = "The time is:";
             const int dontPanic = 42;
-            const string dontPanicText = @"______            _ _    ______           _      
+            const string dontPanicText = @"
 |  _  \          ( ) |   | ___ \         (_)     
 | | | |___  _ __ |/| |_  | |_/ /_ _ _ __  _  ___ 
 | | | / _ \| '_ \  | __| |  __/ _` | '_ \| |/ __|
@@ -41,9 +41,7 @@ namespace HHG_timebased_welcome_quotes
 ";
 
             if (player.age == dontPanic)
-            {
                 Console.WriteLine(dontPanicText);
-            }
             else
             {
 
