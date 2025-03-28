@@ -30,7 +30,7 @@ namespace HHG_timebased_welcome_quotes
             const string timeFormat = "HH:mm:ss";
             const string dateMessage = "The date is:";
             const string timeMessage = "The time is:";
-            int dontPanic = 42;
+            const int dontPanic = 42;
             const string dontPanicText = @"______            _ _    ______           _      
 |  _  \          ( ) |   | ___ \         (_)     
 | | | |___  _ __ |/| |_  | |_/ /_ _ _ __  _  ___ 
@@ -38,7 +38,7 @@ namespace HHG_timebased_welcome_quotes
 | |/ / (_) | | | | | |_  | | | (_| | | | | | (__ 
 |___/ \___/|_| |_|  \__| \_|  \__,_|_| |_|_|\___|
                                                  
-                                                 ";
+";
 
             if (player.age == dontPanic)
             {
