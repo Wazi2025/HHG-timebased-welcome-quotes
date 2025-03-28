@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HHG-timebased-welcome-quotes")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bc09c71f6c0347a1b7a202cdd0cb002532130311")]
 [assembly: System.Reflection.AssemblyProductAttribute("HHG-timebased-welcome-quotes")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HHG-timebased-welcome-quotes")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

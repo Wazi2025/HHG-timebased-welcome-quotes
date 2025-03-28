@@ -1,7 +1,4 @@
-﻿using System.Diagnostics.CodeAnalysis;
-using System.IO.Pipelines;
-
-namespace HHG_timebased_welcome_quotes
+﻿namespace HHG_timebased_welcome_quotes
 {
     class Program
     {
@@ -17,7 +14,7 @@ namespace HHG_timebased_welcome_quotes
         //as long as the methods are static
         static Player player = new Player();
 
-        //create a new string list
+        //create a new string list which also needs to be static since we are populating it inside the InitializeList method
         static List<string> greetingList = new List<string>();
 
         static void Main(string[] args)
@@ -28,27 +25,24 @@ namespace HHG_timebased_welcome_quotes
             ReadInput();
 
             var date = DateTime.Now;
-            string dateFormat = "dd MMMM, yyyy";
-            string timeFormat = "HH:mm:ss";
-            string dateMessage = "The date is:";
-            string timeMessage = "The time is:";
-            //int itemInList = date.Second;
+            const string dateFormat = "dd MMMM, yyyy";
+            const string timeFormat = "HH:mm:ss";
+            const string dateMessage = "The date is:";
+            const string timeMessage = "The time is:";
 
-
-            Console.WriteLine($"Hello, {player.firstName} {player.lastName} ({player.age} years).\n\"{greetingList[date.Second]}\"\n\n{dateMessage} {date.ToString(dateFormat)}\n{timeMessage} {date.ToString(timeFormat)}");
+            Console.WriteLine($"Hello, {player.firstName} {player.lastName} ({player.age} years). Your quote is:\n\"{greetingList[date.Second]}\"\n\n{dateMessage} {date.ToString(dateFormat)}\n{timeMessage} {date.ToString(timeFormat)}");
             Console.WriteLine($"Quote used is located at position {greetingList.IndexOf(greetingList[date.Second])} in a list of {greetingList.Count} items.");
-            //testing purposes
-            //Console.WriteLine($"Hello, {player.firstName} {player.lastName} ({player.age} years).\n\"{greetingList[date.Second]}\"\n\n{dateMessage} {date.ToString(dateFormat)}\n{timeMessage} {date.ToString(timeFormat)}");
 
         } //end of Main
 
         public static bool IsNull(string? input)
         {
-            if (input != "")
-                return false;
-            else
+            //not really necessary to create a method just for IsNullOrEmpty but I wanted to test my own understanding
+            //of using methods/functions with a return value (and parameter)
+            if (string.IsNullOrEmpty(input))
                 return true;
-
+            else
+                return false;
         }
 
         public static void InitializeList()
@@ -119,7 +113,7 @@ namespace HHG_timebased_welcome_quotes
 
         public static void ReadInput()
         {
-            string? result = "";
+            string? result = null;
             bool ageIsANumber = false;
 
             while (IsNull(result))
@@ -128,7 +122,7 @@ namespace HHG_timebased_welcome_quotes
                 result = Console.ReadLine();
             }
             player.firstName = result;
-            result = "";
+            result = null;
 
             while (IsNull(result))
             {
@@ -136,15 +130,14 @@ namespace HHG_timebased_welcome_quotes
                 result = Console.ReadLine();
             }
             player.lastName = result;
-            result = "";
+            result = null;
 
             while (!ageIsANumber)
             {
                 Console.WriteLine("What is your age?");
                 result = Console.ReadLine();
 
-                //check if string can be converted to number
-                //Note: consider using a TryParse method like IsNull
+                //check if string can be converted to number                
                 if (int.TryParse(result, out int number))
                 {
                     player.age = number;
@@ -153,7 +146,6 @@ namespace HHG_timebased_welcome_quotes
                 else
                     Console.WriteLine($"{result} is not a number");
             }
-
         }
     } //end of class Program
 }

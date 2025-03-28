@@ -12,3 +12,4 @@ c:\Users\Instruktor\Desktop\CSharp\HHG-timebased-welcome-quotes\obj\Debug\net9.0
 c:\Users\Instruktor\Desktop\CSharp\HHG-timebased-welcome-quotes\obj\Debug\net9.0\HHG-timebased-welcome-quotes.pdb
 c:\Users\Instruktor\Desktop\CSharp\HHG-timebased-welcome-quotes\obj\Debug\net9.0\HHG-timebased-welcome-quotes.genruntimeconfig.cache
 c:\Users\Instruktor\Desktop\CSharp\HHG-timebased-welcome-quotes\obj\Debug\net9.0\ref\HHG-timebased-welcome-quotes.dll
+c:\Users\Instruktor\Desktop\CSharp\HHG-timebased-welcome-quotes\obj\Debug\net9.0\HHG-timebased-welcome-quotes.sourcelink.json
