@@ -24,15 +24,15 @@
             //Greet the user with their firstname, lastname and age with a custom welcome based on date/time (seconds)
             ReadInput();
 
-            var date = DateTime.Now;
+            DateTime date = DateTime.Now;
             const string dateFormat = "dd MMMM, yyyy";
             const string timeFormat = "HH:mm:ss";
             const string dateMessage = "The date is:";
             const string timeMessage = "The time is:";
 
-            Console.WriteLine($"Hello, {player.firstName} {player.lastName} ({player.age} years). Your quote is:\n\"{greetingList[date.Second]}\"\n\n{dateMessage} {date.ToString(dateFormat)}\n{timeMessage} {date.ToString(timeFormat)}");
+            Console.WriteLine($"Hello, {player.firstName} {player.lastName} ({player.age} years). Your quote is:\n\"{greetingList[date.Second]}\"\n\n{dateMessage} {date.DayOfWeek} {date.ToString(dateFormat)}\n{timeMessage} {date.ToString(timeFormat)}");
             Console.WriteLine($"Quote used is located at position {greetingList.IndexOf(greetingList[date.Second])} in a list of {greetingList.Count} items.");
-
+            //Console.WriteLine($"Today is a {date.DayOfWeek}");
         } //end of Main
 
         public static bool IsNull(string? input)
