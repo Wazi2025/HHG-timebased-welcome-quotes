@@ -1,0 +1,14 @@
+c:\Users\Instruktor\Desktop\CSharp\HHG-timebased-welcome-quotes\bin\Debug\net9.0\HHG-timebased-welcome-quotes.exe
+c:\Users\Instruktor\Desktop\CSharp\HHG-timebased-welcome-quotes\bin\Debug\net9.0\HHG-timebased-welcome-quotes.deps.json
+c:\Users\Instruktor\Desktop\CSharp\HHG-timebased-welcome-quotes\bin\Debug\net9.0\HHG-timebased-welcome-quotes.runtimeconfig.json
+c:\Users\Instruktor\Desktop\CSharp\HHG-timebased-welcome-quotes\bin\Debug\net9.0\HHG-timebased-welcome-quotes.dll
+c:\Users\Instruktor\Desktop\CSharp\HHG-timebased-welcome-quotes\bin\Debug\net9.0\HHG-timebased-welcome-quotes.pdb
+c:\Users\Instruktor\Desktop\CSharp\HHG-timebased-welcome-quotes\obj\Debug\net9.0\HHG-timebased-welcome-quotes.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\Instruktor\Desktop\CSharp\HHG-timebased-welcome-quotes\obj\Debug\net9.0\HHG-timebased-welcome-quotes.AssemblyInfoInputs.cache
+c:\Users\Instruktor\Desktop\CSharp\HHG-timebased-welcome-quotes\obj\Debug\net9.0\HHG-timebased-welcome-quotes.AssemblyInfo.cs
+c:\Users\Instruktor\Desktop\CSharp\HHG-timebased-welcome-quotes\obj\Debug\net9.0\HHG-timebased-welcome-quotes.csproj.CoreCompileInputs.cache
+c:\Users\Instruktor\Desktop\CSharp\HHG-timebased-welcome-quotes\obj\Debug\net9.0\HHG-timebased-welcome-quotes.dll
+c:\Users\Instruktor\Desktop\CSharp\HHG-timebased-welcome-quotes\obj\Debug\net9.0\refint\HHG-timebased-welcome-quotes.dll
+c:\Users\Instruktor\Desktop\CSharp\HHG-timebased-welcome-quotes\obj\Debug\net9.0\HHG-timebased-welcome-quotes.pdb
+c:\Users\Instruktor\Desktop\CSharp\HHG-timebased-welcome-quotes\obj\Debug\net9.0\HHG-timebased-welcome-quotes.genruntimeconfig.cache
+c:\Users\Instruktor\Desktop\CSharp\HHG-timebased-welcome-quotes\obj\Debug\net9.0\ref\HHG-timebased-welcome-quotes.dll
